@@ -1,0 +1,62 @@
+/********Global Styles********/
+
+body {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #D4D3E9;
+
+      
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header .content-wrapper{
+    display: flex;
+    background-color:  #EEE4F0;
+    font-family: "Alata"; 
+    flex-wrap: wrap;
+
+}
+header h1 {
+    flex-grow: 1;
+}
+
+header .headliner{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  margin-left: 6em;
+  padding-top: 1em;
+}
+
+
+header .image{
+   display: flex;  
+}
+
+header img {
+width: 200px;
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+display: block;
+margin: 0 auto;
+
+}
+
+header h2{
+    display: flex;
+    align-self: center;
+}
