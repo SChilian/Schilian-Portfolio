@@ -5,58 +5,123 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #D4D3E9;
+    width: 100%;
 
       
 }
 
 .content-wrapper{
-    margin: 0 auto;
     overflow: auto;
 }
 
 header .content-wrapper{
     display: flex;
-    background-color:  #EEE4F0;
+    background-color: #EC91C4;
     font-family: "Alata"; 
     flex-wrap: wrap;
-
+    width: 98%;
+    background-image: url("../img/header-background1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
+
 header h1 {
     flex-grow: 1;
+    /*padding-left: 10px;*/
+    font-size: 40px;
 }
 
 header .headliner{
     display: flex;
-    flex-direction: row;
-    height: 200px;
+    flex-direction: column;
+    width: 100%;
+    /*justify-content: space-around;*/
+    padding: 20px;
+    align-items: center;
+    
+}
+
+header nav{
+    flex-grow: 1;
+   
     
 }
 
 header nav ul{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
   list-style: none;
-  margin-left: 6em;
-  padding-top: 1em;
+  font-size: 22px;
+  width: 100%;
+  padding-left: 0;
 }
 
-
-header .image{
-   display: flex;  
+header nav li {
+    display: inline-block;
+    padding: 0 5px;
 }
 
-header img {
-width: 200px;
+header nav ul li a{
+    text-decoration: none;
+}
+
+header figure{
+    display: grid;
+    place-items: center;
+    width: 100%; 
+    justify-content: center; 
+    justify-items: center;   
+}
+
+header figure img {
+width: 300px;
 max-width: 100%;
 height: auto;
 border-radius: 10px;
-display: block;
+display: flex;
 margin: 0 auto;
+place-items: center;
+padding-bottom: 1em;
 
 }
 
-header h2{
-    display: flex;
-    align-self: center;
+header figcaption {
+    font-size: 25px;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+    /*General styles*/
+    header .headliner{
+        display: flex;
+        flex-direction: row;
+}
+header figure{
+    justify-content: flex-start; 
+    justify-items: flex-start;   
+}
+header nav ul{
+    float: right;
+   
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    /*header .headliner{
+        display: flex;
+        flex-direction: row;
+        /*width: 100%;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        
+    }
+}
+
+
