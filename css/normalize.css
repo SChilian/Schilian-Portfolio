@@ -5,31 +5,33 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #D4D3E9;
-    width: 100%;
-
-      
+    width: 100%; 
+    margin: 0;   
 }
 
 .content-wrapper{
     overflow: auto;
 }
 
+/**********Mobile Styles**********/
+/**********Header**********/
+
 header .content-wrapper{
     display: flex;
     background-color: #EC91C4;
     font-family: "Alata"; 
     flex-wrap: wrap;
-    width: 98%;
+    width: 100%;
     background-image: url("../img/header-background1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    height: 30%;
+    
 }
 
 header h1 {
     flex-grow: 1;
-    /*padding-left: 10px;*/
     font-size: 40px;
 }
 
@@ -37,23 +39,19 @@ header .headliner{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*justify-content: space-around;*/
     padding: 20px;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 header nav{
-    flex-grow: 1;
-   
-    
+    flex-grow: 1; 
 }
 
 header nav ul{
-  list-style: none;
-  font-size: 22px;
-  width: 100%;
-  padding-left: 0;
+    list-style: none;
+    font-size: 22px;
+    width: 100%;
+    padding-left: 0;
 }
 
 header nav li {
@@ -74,22 +72,44 @@ header figure{
 }
 
 header figure img {
-width: 300px;
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-display: flex;
-margin: 0 auto;
-place-items: center;
-padding-bottom: 1em;
-
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    place-items: center;
+    
 }
 
 header figcaption {
     font-size: 25px;
+    padding-top: 10px;
+}
+
+/**********About Section**********/
+#about {
+    background-color: white;
+    padding: 20px;
 }
 
 
+/**********Skills Section**********/
+#skills {
+    background-color: #ffcee6;
+    padding: 20px;
+}
+
+
+/**********Projects Section**********/
+#projects {
+    background-color: white;
+    padding: 20px;
+}
+
+#projects img {
+    width: 200px;
+}
 
 @media only screen and (min-width: 768px) {
     /*General styles*/
