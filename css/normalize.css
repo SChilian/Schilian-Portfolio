@@ -140,6 +140,20 @@ header figcaption {
     width: 200px;
 }
 
+#projects h2{
+    text-align: center;
+}
+
+.projects-display h3 {
+    text-align: center;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+    
+}
+
 /**********Contact Section**********/
 #contact {
     background-color: #ffcee6;;
@@ -148,6 +162,12 @@ header figcaption {
 
 #contact img {
     width: 200px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+    
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -156,11 +176,13 @@ header figcaption {
         display: flex;
         flex-direction: row;
 }
+
 header figure{
     justify-content: flex-start; 
     justify-items: flex-start;   
 }
-header nav ulgit {
+
+header nav ul {
     display: flex;
    justify-content: right;
    
