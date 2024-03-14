@@ -172,7 +172,11 @@ header figcaption {
 
 @media only screen and (min-width: 768px) {
     /*General styles*/
-    header .headliner{
+body {
+    
+}
+
+header .headliner{
         display: flex;
         flex-direction: row;
 }
