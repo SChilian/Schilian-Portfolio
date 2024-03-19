@@ -149,27 +149,23 @@
   </main>
   <footer id="contact">
     <div class="content-wrapper">
-      <h2>Contact Me</h2>
+      <h2>Let's Connect</h2>
       <div class="contact-info">
-        <img src="img/envelope-regular.svg" alt="email icon" id="envelope"><a
-          href="mailto:sierrachilian.com">Sierrachilian@gmail.com</a>
-        <h3 id="social-media">Let's Connect!</h3>
+        <div class="contact-form">
         <form action="https://formspree.io/f/xkndzdbb" method="POST">
           <label>
             <label>
-              Name:
-              <input id="name" type="name" name="name">
+              <input id="name" type="text" name="full-name" placeholder="First & Last Name" required>
             </label>
-            Email:
-            <input id="email" type="email" name="email">
+            <input id="email" type="text" name="email" placeholder="your_title@google.com" required>
           </label>
           <label>
-            Your message:
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
           </label>
-          <!-- your other form fields go here -->
           <button class="btn" type="submit">Send</button>
         </form>
+      </div>
+        <div class="social-media">
         <ul>
           <li><a href="https://github.com/SChilian" target="_blank"><img src="img/linkedin.svg" alt="linkedin logo"></a>
           </li>
@@ -177,6 +173,7 @@
                 src="img/github (2).svg" alt="github logo"></a>
           </li>
         </ul>
+        </div>
       </div>
     </div>
     <div>
