@@ -1,17 +1,8 @@
-const btn = document.querySelector(".btn");
-const resetForm = document.getElementById("message");
-const resetEmail = document.getElementById("email");
-const resetName = document.getElementById("name");
-
-btn.addEventListener("click", setTimeout)
-
+//Reset Form//
 setTimeout(clearData, 1000);
 
-console.log(resetForm.value);
-
 function clearData () {
-    resetForm.value = "";
-    resetEmail.value = "";
-    resetName.value = "";
+
+    document.getElementById("myForm").reset();
 
 }
