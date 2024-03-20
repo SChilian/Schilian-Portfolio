@@ -13,6 +13,13 @@ body {
     overflow: auto;
 }
 
+.linebrake {
+    border: 1px solid #ffcee6;
+    margin: 30px auto;
+    width: 95%;
+    margin-top: -10px;
+}
+
 /**********Mobile Styles**********/
 /**********Header**********/
 
@@ -52,15 +59,20 @@ header nav ul{
     font-size: 22px;
     width: 100%;
     padding-left: 0;
+    text-transform: lowercase;
+    font-variant: small-caps;
 }
 
 header nav li {
     display: inline-block;
     padding: 0 5px;
+
 }
 
 header nav ul li a{
     text-decoration: none;
+    font-weight: 500;
+    color: black;
 }
 
 header figure{
@@ -97,6 +109,7 @@ h2 {
     text-align: center;
 }
 
+
 #about p {
    font-size: 16px;
 }
@@ -116,6 +129,11 @@ h2 {
 #skills h2{
     display: flex;
     justify-content: center;
+}
+
+#skills .linebrake {
+    border: 1px solid white;
+    
 }
 
 .languages{
@@ -172,6 +190,11 @@ h2 {
 #contact {
     background-color: #ffcee6;;
     padding: 20px;
+}
+
+#contact .linebrake {
+    border: 1px solid white;
+    
 }
 
 #contact .contact-info{
