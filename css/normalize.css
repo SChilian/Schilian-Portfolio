@@ -169,9 +169,14 @@ h2 {
 }
 
 #projects img {
-    width: 200px;
+    width: 98%;
+    height: auto;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px #74C0Fc
+    /*box-shadow: 10px 10px 5px #74C0Fc;*/
+    box-shadow: 10px 5px 23px #74C0Fc;
+}
+
+
 }
 
 #projects h2{
@@ -191,6 +196,7 @@ h2 {
 .project-image {
   display: flex;
   justify-content: center;
+  
     
 }
 
