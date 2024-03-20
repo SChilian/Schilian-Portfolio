@@ -170,20 +170,35 @@ h2 {
 
 #projects img {
     width: 200px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #74C0Fc
 }
 
 #projects h2{
     text-align: center;
 }
 
+.project-display {
+    padding-top: 20px;
+}
+
 .projects-display h3 {
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .project-image {
   display: flex;
   justify-content: center;
     
+}
+
+#projects p {
+    padding-top: 5px;
+    margin-left: 25px;
+    padding-bottom: 35px;
+    margin-left: 25px;
 }
 
 /**********Contact Section**********/
