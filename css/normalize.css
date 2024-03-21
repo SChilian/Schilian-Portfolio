@@ -177,7 +177,6 @@ h2 {
 }
 
 
-}
 
 #projects h2{
     text-align: center;
@@ -202,9 +201,9 @@ h2 {
 
 #projects p {
     padding-top: 5px;
+    padding-bottom: 40px;
     margin-left: 25px;
-    padding-bottom: 35px;
-    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /**********Contact Section**********/
@@ -252,8 +251,7 @@ h2 {
 
 form type, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    border: 2px solid  #74C0FC;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -265,10 +263,19 @@ form [type=submit] {
     background-color: #74C0FC;
     padding: 12px, 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
+form #message {
+    height: 100px; 
+}
+
+form [type=text] {
+    border: 2px solid  #74C0FC;
+    margin: 5px;
+    border-radius: 4px;
+}
 
 
 @media only screen and (min-width: 768px) {
