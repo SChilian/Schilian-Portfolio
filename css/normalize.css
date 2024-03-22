@@ -166,7 +166,7 @@ h2 {
 /**********Projects Section**********/
 #projects {
     background-color: white;
-    padding: 12px 40px;
+    padding: 12px 40px 0 40px;
 }
 
 #projects img {
@@ -176,7 +176,6 @@ h2 {
     /*box-shadow: 10px 10px 5px #74C0Fc;*/
     box-shadow: 10px 5px 23px #74C0Fc;
 }
-
 
 
 #projects h2{
@@ -197,7 +196,6 @@ h2 {
   display: flex;
   justify-content: center;
   
-    
 }
 
 #projects p {
@@ -285,10 +283,7 @@ form label :nth-child(2) {
 
 
 @media only screen and (min-width: 768px) {
-    /*General styles*/
-body {
-    
-}
+    /***********Header Section**********/
 
 header .headliner{
         display: flex;
@@ -306,34 +301,59 @@ header nav ul {
    
   }
 
+  /**********Project Section**********/
 
-  #projects {
-    padding: 120px;
+#projects {
+    padding: 20px 65px 0 65px;
 }
 
- /* form [type=text], 
-  [type=submit],
-  form #message {
-    width: 100%;
-    
-  }*/
+.linebrake {
+    width: 99%; 
+}
+
+/**********Contact Section**********/
+.linebrake {
+    width: 90%; 
+}
+
 }
 
 
 
 
 @media only screen and (min-width: 1200px) {
+/**********Header Section*********/
+header .headliner{
+    padding: 0 65px;
+}
 
+header figure{ 
+    padding: 5px 45px; 
+}
 
-    /*header .headliner{
-        display: flex;
-        flex-direction: row;
-        /*width: 100%;
-        justify-content: space-around;
-        padding: 20px;
-        align-items: center;
-        
-    }
+/**********About Section**********/
+#about,
+#skills {
+    padding: 12px 80px;
+}
+
+#skills ul li{
+    padding: 0 25px;
+}
+
+.skills {
+    justify-content: center;
+}
+
+/**********About Section**********/
+#projects a {
+    width:70%;
+}
+
+#projects p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 }
 
 
