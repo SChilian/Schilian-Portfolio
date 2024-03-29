@@ -331,10 +331,45 @@ header figure{
     padding: 5px 45px; 
 }
 
-/**********About Section**********/
+/**********About & Skills Section**********/
 #about,
 #skills {
     padding: 12px 80px;
+}
+
+
+#about .linebrake{
+    width: 70%;
+}
+
+#about {
+    height: 350%;
+}
+
+#about .content-wrapper{
+    padding: 0 40px
+}
+
+#about .about-me{
+    padding: 0 75px;
+}
+
+#about .about-me p {
+    font-size: 20px;
+    padding: 7px 0;
+}
+
+#skills {
+    height: 420px;
+}
+
+#skills .content-wrapper{
+    padding: 0 115px;
+}
+
+#skills .linebrake{
+    width: 77%;
+    padding: 0 2px;
 }
 
 #skills ul li{
@@ -343,17 +378,31 @@ header figure{
 
 .skills {
     justify-content: center;
+    /*display: flex;*/
 }
 
-/**********About Section**********/
+/**********Project Section**********/
+#project {
+    padding: 0 125px;
+}
+
 #projects a {
     width:70%;
 }
 
-#projects p {
-    margin-left: 100px;
-    margin-right: 100px;
+#project .project-image{
+    padding: 15px 0;
 }
+
+#project h3{
+    padding-top: 10px;
+    
+}
+
+#projects p {
+    padding: 7px 240px;
+}
+
 }
 
 
