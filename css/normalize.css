@@ -6,7 +6,8 @@ body {
     font-style: normal;
     background-color: #D4D3E9;
     width: 100%; 
-    margin: auto;   
+    margin: auto;
+    font-size: 20px;   
 }
 
 .content-wrapper{
@@ -56,7 +57,7 @@ header nav{
 
 header nav ul{
     list-style: none;
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
     padding-left: 0;
     text-transform: lowercase;
@@ -112,7 +113,7 @@ h2 {
 
 
 #about p {
-   font-size: 16px;
+   font-size: 20px;
 }
 
 #about span {
@@ -199,6 +200,7 @@ h2 {
 }
 
 #projects p {
+    text-align: left;
     padding-top: 5px;
     padding-bottom: 40px;
     margin-left: 25px;
@@ -213,6 +215,7 @@ h2 {
 
 #contact .linebrake {
     border: 1px solid white;
+    margin: 10px auto;
     
 }
 
@@ -246,6 +249,25 @@ h2 {
     display: flex;
     flex-direction: column;
     
+}
+
+#contact .contact-form{
+    width: 50%;
+    position: relative;
+}
+
+form #name {
+    position: relative;
+    bottom: -32px;
+    right: 0.5%;
+    width: 45%;
+}
+
+form #email {
+    position: relative;
+    left: 51%;
+    bottom: 3px;
+    width: 45%;
 }
 
 form type, textarea {
@@ -306,6 +328,15 @@ header nav ul {
 #projects {
     padding: 20px 65px 0 65px;
 }
+
+#projects a {
+    width: 60%;
+}
+
+#projects p{
+    padding: 4px 150px 40px;
+}
+
 
 .linebrake {
     width: 99%; 
@@ -382,26 +413,74 @@ header figure{
 }
 
 /**********Project Section**********/
-#project {
+#projects {
     padding: 0 125px;
+}
+
+
+#projects h2 {
+    font-size: 30px;
+}
+
+#projects .linebrake{
+    width: 85%;
+    padding: 0 50px;
 }
 
 #projects a {
     width:70%;
 }
 
-#project .project-image{
-    padding: 15px 0;
+#projects .project-image{
+    /*padding: 15px 0;*/
+    padding-top: 20px;
+    margin: 30px;
 }
 
-#project h3{
-    padding-top: 10px;
+#projects h3{
+    /*padding-top: 10px;*/
+    font-size: 23px;
     
 }
 
 #projects p {
-    padding: 7px 240px;
+    padding: 7px 150px 36px;
+    font-size: 20px;
 }
+
+/**********Contact Section**********/
+#contact .linebrake {
+    width: 63%;
+}
+
+#contact .contact-form{
+    width: 50%;
+    position: relative;
+}
+
+/*form [type=text] {
+    margin: 5px 4px;
+    padding: 2px;
+    width: 48%;
+}*/
+
+form [type=submit] {
+    width: 50%;
+    align-self: center;
+}
+
+
+form #email {
+    position: relative;
+    left: 53%;
+    bottom: 5px;
+    width: 45%;
+}
+
+#contact .social-media ul {
+    padding-top: 20px;
+}
+
 
 }
 
