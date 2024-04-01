@@ -280,7 +280,6 @@ form type, textarea {
 
 form [type=submit] {
     background-color: #74C0FC;
-    padding: 12px, 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
