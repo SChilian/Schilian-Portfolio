@@ -57,7 +57,7 @@ header nav{
 
 header nav ul{
     list-style: none;
-    font-size: 24px;
+    font-size: 20px;
     width: 100%;
     padding-left: 0;
     text-transform: lowercase;
@@ -66,8 +66,7 @@ header nav ul{
 
 header nav li {
     display: inline-block;
-    padding: 0 15px;
-
+    padding: 0 7px;
 }
 
 header nav ul li a{
@@ -126,7 +125,11 @@ h2 {
 #skills {
     background-color: #ffcee6;
     padding: 12px 50px;
-}  
+}
+
+#skills #content-wrapper{
+    font-size: 17px;
+}
 
 #skills h2{
     display: flex;
@@ -142,6 +145,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     padding-top: 15px;
+    flex-wrap: wrap;
 }
 
 .language-list{
@@ -248,6 +252,7 @@ h2 {
 #contact form {
     display: flex;
     flex-direction: column;
+    padding-top: 25px;
     
 }
 
@@ -256,19 +261,12 @@ h2 {
     position: relative;
 }
 
-form #name {
+form #name, #email {
+    width: 95%;
     position: relative;
-    bottom: -32px;
-    right: 0.5%;
-    width: 45%;
+    right: 5px;
 }
 
-form #email {
-    position: relative;
-    left: 51%;
-    bottom: 3px;
-    width: 45%;
-}
 
 form type, textarea {
     width: 100%;
@@ -320,8 +318,14 @@ header figure{
 header nav ul {
     display: flex;
    justify-content: right;
+   font-size: 24px;
    
   }
+
+  header nav li {
+    padding: 0 10px;
+}
+
 
   /**********Project Section**********/
 
@@ -345,6 +349,25 @@ header nav ul {
 /**********Contact Section**********/
 .linebrake {
     width: 90%; 
+}
+
+#contact form {
+    padding-top: 0;
+    
+}
+
+form #name {
+    position: relative;
+    bottom: -32px;
+    right: 0.5%;
+    width: 46%;
+}
+
+form #email {
+    position: relative;
+    left: 51%;
+    bottom: 3px;
+    width: 46%;
 }
 
 }
@@ -391,7 +414,7 @@ header figure{
 }
 
 #skills {
-    height: 420px;
+    height: 420%;
 }
 
 #skills .content-wrapper{
@@ -458,11 +481,11 @@ header figure{
     position: relative;
 }
 
-/*form [type=text] {
+form [type=text] {
     margin: 5px 4px;
     padding: 2px;
     width: 48%;
-}*/
+}
 
 form [type=submit] {
     width: 50%;
