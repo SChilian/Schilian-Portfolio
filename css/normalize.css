@@ -334,12 +334,26 @@ header nav ul {
     padding: 20px 65px 0 65px;
 }
 
+#projects .projects-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+#projects .projects-display{
+    width: 40%;
+}
+
+
 #projects a {
-    width: 60%;
+    width: 85%;
 }
 
 #projects p{
-    padding: 4px 150px 40px;
+    padding: 4px 10px 15px;
 }
 
 
@@ -437,9 +451,6 @@ header figure{
 }
 
 /**********Project Section**********/
-#projects {
-    padding: 0 125px;
-}
 
 
 #projects h2 {
@@ -447,12 +458,12 @@ header figure{
 }
 
 #projects .linebrake{
-    width: 85%;
+    width: 90%;
     padding: 0 50px;
 }
 
 #projects a {
-    width:70%;
+    width:80%;
 }
 
 #projects .project-image{
@@ -467,10 +478,6 @@ header figure{
     
 }
 
-#projects p {
-    padding: 7px 150px 36px;
-    font-size: 20px;
-}
 
 /**********Contact Section**********/
 #contact .linebrake {
