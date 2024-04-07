@@ -154,6 +154,7 @@ h2 {
 
 .skills{
     display: flex; 
+    padding-bottom: 15px;
 }
 
 .skill-list ul{
@@ -174,11 +175,11 @@ h2 {
     padding: 12px 40px 0 40px;
 }
 
+
 #projects img {
     width: 98%;
     height: auto;
     border-radius: 5px;
-    /*box-shadow: 10px 10px 5px #74C0Fc;*/
     box-shadow: 10px 5px 23px #74C0Fc;
 }
 
@@ -187,8 +188,26 @@ h2 {
     text-align: center;
 }
 
-.project-display {
+#projects .website{
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#projects .website a {
+    text-decoration: none;
+    color: #EC91C4;
+    transition: .3s;
+}
+
+#backcolor:hover{
+    background-color:  #74C0Fc;
+}
+
+.projects-display {
     padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .projects-display h3 {
@@ -206,9 +225,13 @@ h2 {
 #projects p {
     text-align: left;
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+#projects p span {
+    font-weight: 700;
 }
 
 /**********Contact Section**********/
@@ -447,7 +470,6 @@ header figure{
 
 .skills {
     justify-content: center;
-    /*display: flex;*/
 }
 
 /**********Project Section**********/
@@ -458,7 +480,7 @@ header figure{
 }
 
 #projects .linebrake{
-    width: 90%;
+    width: 61%;
     padding: 0 50px;
 }
 
@@ -467,13 +489,11 @@ header figure{
 }
 
 #projects .project-image{
-    /*padding: 15px 0;*/
     padding-top: 20px;
     margin: 30px;
 }
 
 #projects h3{
-    /*padding-top: 10px;*/
     font-size: 23px;
     
 }
