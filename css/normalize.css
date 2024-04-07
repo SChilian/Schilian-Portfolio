@@ -200,7 +200,7 @@ h2 {
     transition: .3s;
 }
 
-#backcolor:hover{
+.backcolor:hover{
     background-color:  #74C0Fc;
 }
 
