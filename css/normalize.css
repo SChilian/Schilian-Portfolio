@@ -291,10 +291,11 @@ h2 {
     position: relative;
 }
 
-form #name, #email {
-    width: 95%;
+form #full-name, #email {
+    width: 97%;
     position: relative;
     right: 5px;
+    height: 25px;
 }
 
 
@@ -325,9 +326,9 @@ form [type=text] {
     border-radius: 4px;
 }
 
-form label :first-child,
-form label :nth-child(2) {
-    height: 20px;
+label [for=email],
+label [for=message] {
+    padding-top: 10px;
 }
 
 

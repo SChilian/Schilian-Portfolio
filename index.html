@@ -190,15 +190,12 @@
       <div class="contact-info">
         <div class="contact-form">
           <form id="myForm" action="https://formspree.io/f/xkndzdbb" method="POST">
-            <label>
-              <input id="name" type="text" name="full-name" placeholder="First & Last Name" required>
-            </label>
-            <label>
+            <label for="full-name">First & Last Name</label>
+              <input id="full-name" type="text" name="full-name" placeholder="First & Last Name" required>
+            <label for="email">Email Address</label>
               <input id="email" type="text" name="email" placeholder="your_title@google.com" required>
-            </label>
-            <label>
+            <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Message" required></textarea>
-            </label>
             <button class="btn" type="submit">Send</button>
           </form>
         </div>
