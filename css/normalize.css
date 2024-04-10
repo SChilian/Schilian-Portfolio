@@ -109,7 +109,7 @@ header figcaption {
 /**********About Section**********/
 #about {
     background-color: white;
-    padding: 12px 50px;
+    padding: 12px 45px;
 }
 
 h2 {
@@ -130,7 +130,7 @@ h2 {
 /**********Skills Section**********/
 #skills {
     background-color: #ffcee6;
-    padding: 12px 50px;
+    padding: 12px 45px;
 }
 
 #skills #content-wrapper{
