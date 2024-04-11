@@ -326,8 +326,7 @@ form [type=text] {
     border-radius: 4px;
 }
 
-label [for=email],
-label [for=message] {
+label {
     padding-top: 10px;
 }
 
