@@ -328,6 +328,7 @@ form [type=text] {
 
 label {
     padding-top: 10px;
+    width: 50%;
 }
 
 
@@ -400,9 +401,9 @@ header nav ul {
     
 }
 
-form #name {
+form #full-name {
     position: relative;
-    bottom: -32px;
+    bottom: -85px;
     right: 0.5%;
     width: 46%;
 }
@@ -410,8 +411,19 @@ form #name {
 form #email {
     position: relative;
     left: 51%;
-    bottom: 3px;
+    bottom: -6px;
     width: 46%;
+}
+label[for="full-name"] {
+    position: relative;
+    left: 1%;
+    bottom: -83px;
+}
+
+label[for="email"] {
+    position: relative;
+    right: -53%;
+    bottom: -5px;
 }
 
 }
@@ -527,17 +539,17 @@ form [type=submit] {
 }
 
 
-form #email {
-    position: relative;
-    left: 53%;
-    bottom: 5px;
-    width: 45%;
-}
-
 #contact .social-media ul {
     padding-top: 20px;
 }
 
+label[for="full-name"] {
+    left: .5%;
+}
+
+label[for="email"] {
+    right: -52%;
+}
 
 }
 
