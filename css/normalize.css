@@ -287,7 +287,7 @@ h2 {
 }
 
 #contact .contact-form{
-    width: 50%;
+    width: 55%;
     position: relative;
 }
 
@@ -328,7 +328,8 @@ form [type=text] {
 
 label {
     padding-top: 10px;
-    width: 51%;
+    width: 78%;
+    font-size: 16px;
 }
 
 
@@ -413,7 +414,7 @@ form #full-name {
 form #email {
     position: relative;
     left: 51%;
-    bottom: -6px;
+    bottom: -12px;
     width: 46%;
 }
 label[for="full-name"] {
@@ -425,7 +426,7 @@ label[for="full-name"] {
 label[for="email"] {
     position: relative;
     right: -53%;
-    bottom: -5px;
+    bottom: -11px;
 }
 
 }
