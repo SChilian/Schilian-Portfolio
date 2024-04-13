@@ -328,7 +328,7 @@ form [type=text] {
 
 label {
     padding-top: 10px;
-    width: 50%;
+    width: 51%;
 }
 
 
@@ -397,6 +397,8 @@ header nav ul {
 }
 
 #contact form {
+    position: relative;
+    bottom: 50px;
     padding-top: 0;
     
 }
