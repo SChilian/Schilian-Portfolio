@@ -1,247 +1,564 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/********Global Styles********/
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+body {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #D4D3E9;
+    width: 100%; 
+    margin: auto;
+    font-size: 20px;   
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.content-wrapper{
+    overflow: auto;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+.linebrake {
+    border: 1px solid #ffcee6;
+    margin: 30px auto;
+    width: 95%;
+    margin-top: -10px;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+/**********Mobile Styles**********/
+/**********Header**********/
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+header .content-wrapper{
+    display: flex;
+    background-color: #EC91C4;
+    font-family: "Alata"; 
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url("../img/header-background1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 30%;
+    
 }
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+header h1 {
+    flex-grow: 1;
+    font-size: 40px;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+header .headliner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    align-items: center; 
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+header nav{
+    flex-grow: 1; 
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+header nav ul{
+    list-style: none;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 0;
+    text-transform: lowercase;
+    font-variant: small-caps;
 }
 
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+header nav li {
+    display: inline-block;
+    padding: 0 7px;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+header figure{
+    display: grid;
+    place-items: center;
+    width: 100%; 
+    justify-content: center; 
+    justify-items: center;  
+    padding: 5px 20px; 
 }
 
-.clearfix::after {
-  clear: both;
+header figure img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    place-items: center;
+    
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+header figcaption {
+    font-size: 25px;
+    padding-top: 10px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/**********About Section**********/
+#about {
+    background-color: white;
+    padding: 12px 45px;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+h2 {
+    text-align: center;
+}
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+
+#about p {
+   font-size: 20px;
+}
+
+#about span {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+/**********Skills Section**********/
+#skills {
+    background-color: #ffcee6;
+    padding: 12px 45px;
+}
+
+#skills #content-wrapper{
+    font-size: 17px;
+}
+
+#skills h2{
+    display: flex;
+    justify-content: center;
+}
+
+#skills .linebrake {
+    border: 1px solid white;
+    
+}
+
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.language-list{
+    text-align: center;
+}
+
+.skills{
+    display: flex; 
+    padding-bottom: 15px;
+}
+
+.skill-list ul{
+    display: flex;
+    list-style-type: disclosure-closed;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 22px;
+    line-height: 12px;
+    list-style-position: inside;
+}
+
+
+/**********Projects Section**********/
+#projects {
+    background-color: white;
+    padding: 12px 40px 0 40px;
+}
+
+
+#projects img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 10px 5px 23px #74C0Fc;
+}
+
+
+#projects h2{
+    text-align: center;
+}
+
+#projects .website{
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#projects .website a {
+    text-decoration: none;
+    color: #EC91C4;
+    transition: .3s;
+}
+
+.backcolor:hover{
+    background-color:  #74C0Fc;
+}
+
+.projects-display {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.projects-display h3 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#projects p {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#projects p span {
+    font-weight: 700;
+}
+
+/**********Contact Section**********/
+#contact {
+    background-color: #ffcee6;;
+    padding: 20px 30px;
+}
+
+#contact .linebrake {
+    border: 1px solid white;
+    margin: 10px auto;
+    
+}
+
+#contact .contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media ul{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    width: 200px;
+
+}
+
+#contact a {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    
+}
+
+#contact .contact-form{
+    width: 55%;
+    position: relative;
+}
+
+form #full-name, #email {
+    width: 97%;
+    position: relative;
+    right: 5px;
+    height: 25px;
+}
+
+
+form type, textarea {
+    width: 100%;
+    border: 2px solid  #74C0FC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form [type=submit] {
+    background-color: #74C0FC;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form #message {
+    height: 100px; 
+}
+
+form [type=text] {
+    border: 2px solid  #74C0FC;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+label {
+    padding-top: 10px;
+    width: 78%;
+    font-size: 16px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /***********Header Section**********/
+
+header .headliner{
+        display: flex;
+        flex-direction: row;
+}
+
+header figure{
+    justify-content: flex-start; 
+    justify-items: flex-start;   
+}
+
+header nav ul {
+    display: flex;
+   justify-content: right;
+   font-size: 24px;
+   
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+  header nav li {
+    padding: 0 10px;
 }
+
+
+  /**********Project Section**********/
+
+#projects {
+    padding: 20px 65px 0 65px;
+}
+
+#projects .projects-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+#projects .projects-display{
+    width: 40%;
+}
+
+
+#projects a {
+    width: 85%;
+}
+
+#projects p{
+    padding: 4px 10px 15px;
+}
+
+
+.linebrake {
+    width: 99%; 
+}
+
+/**********Contact Section**********/
+.linebrake {
+    width: 90%; 
+}
+
+#contact form {
+    position: relative;
+    bottom: 50px;
+    padding-top: 0;
+    
+}
+
+form #full-name {
+    position: relative;
+    bottom: -85px;
+    right: 0.5%;
+    width: 46%;
+}
+
+form #email {
+    position: relative;
+    left: 51%;
+    bottom: -12px;
+    width: 46.5%;
+}
+
+label[for="full-name"] {
+    position: relative;
+    left: 1%;
+    bottom: -83px;
+}
+
+label[for="email"] {
+    position: relative;
+    right: -53%;
+    bottom: -11px;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+/**********Header Section*********/
+header .headliner{
+    padding: 0 65px;
+}
+
+header figure{ 
+    padding: 5px 45px; 
+}
+
+/**********About & Skills Section**********/
+#about,
+#skills {
+    padding: 12px 80px;
+}
+
+
+#about .linebrake{
+    width: 70%;
+}
+
+#about {
+    height: 350%;
+}
+
+#about .content-wrapper{
+    padding: 0 40px
+}
+
+#about .about-me{
+    padding: 0 75px;
+}
+
+#about .about-me p {
+    font-size: 20px;
+    padding: 7px 0;
+}
+
+#skills {
+    height: 420%;
+}
+
+#skills .content-wrapper{
+    padding: 0 115px;
+}
+
+#skills .linebrake{
+    width: 77%;
+    padding: 0 2px;
+}
+
+#skills ul li{
+    padding: 0 25px;
+}
+
+.skills {
+    justify-content: center;
+}
+
+/**********Project Section**********/
+
+
+#projects h2 {
+    font-size: 30px;
+}
+
+#projects .linebrake{
+    width: 61%;
+    padding: 0 50px;
+}
+
+#projects a {
+    width:80%;
+}
+
+#projects .project-image{
+    padding-top: 20px;
+    margin: 30px;
+}
+
+#projects h3{
+    font-size: 23px;
+    
+}
+
+
+/**********Contact Section**********/
+#contact .linebrake {
+    width: 63%;
+}
+
+#contact .contact-form{
+    width: 50%;
+    position: relative;
+}
+
+form [type=text] {
+    margin: 5px 4px;
+    padding: 2px;
+    width: 48%;
+}
+
+form [type=submit] {
+    width: 50%;
+    align-self: center;
+}
+
+
+#contact .social-media ul {
+    padding-top: 20px;
+}
+
+label[for="full-name"] {
+    left: .5%;
+}
+
+label[for="email"] {
+    right: -52%;
+}
+
+form #email {
+    width: 48%;
+}
+
+}
+
 
