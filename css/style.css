@@ -223,9 +223,14 @@ h2 {
 }
 
 .project-image {
-  display: flex;
-  justify-content: center;
+    transition: transform .2s;
+    display: flex;
+    justify-content: center;
   
+}
+
+.project-image:hover{
+    transform: scale(110%);
 }
 
 #projects p {
