@@ -443,11 +443,11 @@ label[for="email"] {
 @media only screen and (min-width: 1200px) {
 /**********Header Section*********/
 header .headliner{
-    padding: 0 65px;
+    padding: 10px 180px;
 }
 
 header figure{ 
-    padding: 5px 45px; 
+    padding: 5px 170px; 
 }
 
 /**********About & Skills Section**********/
