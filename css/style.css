@@ -216,16 +216,48 @@ h2 {
     text-align: center;
 }
 
+#projects .btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: .5rem;
+    border: 2px solid #345678;
+    border-radius: 30%;
+    margin: 0 10px;
+    width: 12%;
+    color:black;
+    background-color: #74C0Fc;
+    transition: .3s;
+
+}
+
+.btn:hover{
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
 #projects .website{
+    display: flex;
+    justify-content: center;
     padding-top: 15px;
-    text-align: center;
     font-weight: 600;
 }
 
-#projects .website a {
+/*#projects .website a {
     text-decoration: none;
     color:  #0000;
-}
+}*/
 
 
 .projects-display {
