@@ -403,13 +403,14 @@ header .headliner{
 }
 
 header figure{
-    margin-top: 12%;
+    margin-top: 130px;
+    padding: 20px 20px;
     justify-content: flex-start; 
     justify-items: flex-start;   
 }
 
 header nav {
-    padding-right: 5%;
+    padding-right: 40px;
 }
 
 header nav ul {
@@ -503,7 +504,12 @@ label[for="email"] {
 @media only screen and (min-width: 1200px) {
 /**********Header Section*********/
 header .headliner{
+    height: 8%;
     padding: 10px 180px;
+}
+
+header nav {
+    padding-right: 360px;
 }
 
 header figure{ 
