@@ -254,11 +254,6 @@ h2 {
     font-weight: 600;
 }
 
-/*#projects .website a {
-    text-decoration: none;
-    color:  #0000;
-}*/
-
 
 .projects-display {
     padding-top: 20px;
@@ -398,13 +393,23 @@ label {
     /***********Header Section**********/
 
 header .headliner{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #FCFCFC;
+        height: 8%;
         display: flex;
         flex-direction: row;
 }
 
 header figure{
+    margin-top: 12%;
     justify-content: flex-start; 
     justify-items: flex-start;   
+}
+
+header nav {
+    padding-right: 5%;
 }
 
 header nav ul {
